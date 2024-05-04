@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Landing Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Inconsolata">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+    <div class="smooth">
+      <header>
+        <h3>Landing</h3>
+        <ul>
+          <li><a href="#one">Home</a></li>
+        </ul>
+      </header>
+      <section id="one">
+        <div class="content parallax">
+          <div>
+            <h1>Landing Page</h1>
+            <svg class="title">
+              <text x="0" y="40">Start Page</text>
+              <path d="M 0 66 50 61"></path>
+            </svg>
+            
+            <p class="lead">
+              This is the basic sample of the Landing Page , Internship Task Given by Encryptix 
+               <a class="leadlink" href="https://github.com/Shubham-2004" target="blank">Github Link</a>
+            </p>
+          </div>
+          <div class="blur">
+            <form><img src="https://th.bing.com/th/id/OIP.nMLvSM1x4RxpyhMwkgDVxQHaE8?rs=1&pid=ImgDetMain"/>
+              <input type="text" placeholder="Email:"/>
+              <input type="text" placeholder="Password:"/><a class="button" href="#bottom">Follow me</a>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer id="bottom" >
+        <div class="widgets" stylesheet>
+          
+        <div class="copy">
+          <p>
+            © 2024 with  <span>♥</span> <a href="https://github.com/Shubham-2004" target="_blank">Shubham Bera</a></p><a href="#one">Scroll top ↑</a>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src = "{% static 'css/script.js' %}"></script>
+  </body>
+</html>
